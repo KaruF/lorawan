@@ -1,0 +1,46 @@
+/*
+ * LoraMac_Commands.h
+ *
+ *  Created on: Dec 22, 2024
+ *      Author: PC
+ */
+
+#ifndef LORAMAC_COMMANDS_H_
+#define LORAMAC_COMMANDS_H_
+
+//END DEVICE COMMANDS
+
+enum End_Device_MacCommands{
+
+	LINK_CHECK_REQ = 0x02,
+	LINK_ADR_ANS,
+	DUTY_CYCLE_ANS,
+	RX_PARAM_SETUP_ANS,
+	DEV_STATUS_ANS,
+	NEW_CHANNEL_ANS,
+	RX_TIMING_SETUP_ANS,
+	PROPRIETARY_END_DEVICE = 0x080,
+};
+
+
+enum Gateway_MacCommands{
+
+	LINK_CHECK_ANS = 0x02,
+	LINK_ADR_REQ,
+	DUTY_CYCLE_REQ,
+	RX_PARAM_SETUP_REQ,
+	DEV_STATUS_REQ,
+	NEW_CHANNEL_REQ,
+	RX_TIMING_SETUP_REQ,
+	PROPRIETARY_GATEWAY = 0x080,
+
+};
+
+
+
+//GATEWAY COMMANDS
+
+
+
+
+#endif /* LORAMAC_COMMANDS_H_ */
